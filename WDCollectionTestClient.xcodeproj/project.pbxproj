@@ -12,6 +12,9 @@
 		583889521AD15E3300DE8805 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583889511AD15E3300DE8805 /* Images.xcassets */; };
 		583889551AD15E3300DE8805 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583889531AD15E3300DE8805 /* MainMenu.xib */; };
 		583889611AD15E3300DE8805 /* WDCollectionTestClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 583889601AD15E3300DE8805 /* WDCollectionTestClientTests.m */; };
+		5838899D1AD1674B00DE8805 /* WDDataset.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838899C1AD1674B00DE8805 /* WDDataset.m */; };
+		583889A01AD167E400DE8805 /* WDDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838899F1AD167E400DE8805 /* WDDataItem.m */; };
+		583889A31AD16E5900DE8805 /* WDDatasetArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +24,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 583889461AD15E3300DE8805;
 			remoteInfo = WDCollectionTestClient;
+		};
+		583889951AD1628800DE8805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 583889741AD15F4500DE8805;
+			remoteInfo = WDCollectionView;
+		};
+		583889971AD1628800DE8805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5838897F1AD15F4500DE8805;
+			remoteInfo = WDCollectionViewTests;
+		};
+		583889991AD1629D00DE8805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 583889731AD15F4500DE8805;
+			remoteInfo = WDCollectionView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,6 +59,13 @@
 		5838895A1AD15E3300DE8805 /* WDCollectionTestClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDCollectionTestClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5838895F1AD15E3300DE8805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		583889601AD15E3300DE8805 /* WDCollectionTestClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDCollectionTestClientTests.m; sourceTree = "<group>"; };
+		583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WDCollectionView.xcodeproj; path = ../WDCollectionView/WDCollectionView.xcodeproj; sourceTree = "<group>"; };
+		5838899B1AD1674B00DE8805 /* WDDataset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDataset.h; sourceTree = "<group>"; };
+		5838899C1AD1674B00DE8805 /* WDDataset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDataset.m; sourceTree = "<group>"; };
+		5838899E1AD167E400DE8805 /* WDDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDataItem.h; sourceTree = "<group>"; };
+		5838899F1AD167E400DE8805 /* WDDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDataItem.m; sourceTree = "<group>"; };
+		583889A11AD16E5900DE8805 /* WDDatasetArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDatasetArrayController.h; sourceTree = "<group>"; };
+		583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDatasetArrayController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +92,7 @@
 				583889491AD15E3300DE8805 /* WDCollectionTestClient */,
 				5838895D1AD15E3300DE8805 /* WDCollectionTestClientTests */,
 				583889481AD15E3300DE8805 /* Products */,
+				583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +113,12 @@
 				583889511AD15E3300DE8805 /* Images.xcassets */,
 				583889531AD15E3300DE8805 /* MainMenu.xib */,
 				5838894A1AD15E3300DE8805 /* Supporting Files */,
+				5838899B1AD1674B00DE8805 /* WDDataset.h */,
+				5838899C1AD1674B00DE8805 /* WDDataset.m */,
+				5838899E1AD167E400DE8805 /* WDDataItem.h */,
+				5838899F1AD167E400DE8805 /* WDDataItem.m */,
+				583889A11AD16E5900DE8805 /* WDDatasetArrayController.h */,
+				583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */,
 			);
 			path = WDCollectionTestClient;
 			sourceTree = "<group>";
@@ -111,6 +149,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		583889911AD1628800DE8805 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				583889961AD1628800DE8805 /* WDCollectionView.framework */,
+				583889981AD1628800DE8805 /* WDCollectionViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +172,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5838899A1AD1629D00DE8805 /* PBXTargetDependency */,
 			);
 			name = WDCollectionTestClient;
 			productName = WDCollectionTestClient;
@@ -178,6 +226,12 @@
 			mainGroup = 5838893E1AD15E3300DE8805;
 			productRefGroup = 583889481AD15E3300DE8805 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 583889911AD1628800DE8805 /* Products */;
+					ProjectRef = 583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				583889461AD15E3300DE8805 /* WDCollectionTestClient */,
@@ -185,6 +239,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		583889961AD1628800DE8805 /* WDCollectionView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WDCollectionView.framework;
+			remoteRef = 583889951AD1628800DE8805 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		583889981AD1628800DE8805 /* WDCollectionViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WDCollectionViewTests.xctest;
+			remoteRef = 583889971AD1628800DE8805 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		583889451AD15E3300DE8805 /* Resources */ = {
@@ -210,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5838899D1AD1674B00DE8805 /* WDDataset.m in Sources */,
 				583889501AD15E3300DE8805 /* main.m in Sources */,
 				5838894E1AD15E3300DE8805 /* AppDelegate.m in Sources */,
+				583889A01AD167E400DE8805 /* WDDataItem.m in Sources */,
+				583889A31AD16E5900DE8805 /* WDDatasetArrayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +304,11 @@
 			isa = PBXTargetDependency;
 			target = 583889461AD15E3300DE8805 /* WDCollectionTestClient */;
 			targetProxy = 5838895B1AD15E3300DE8805 /* PBXContainerItemProxy */;
+		};
+		5838899A1AD1629D00DE8805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WDCollectionView;
+			targetProxy = 583889991AD1629D00DE8805 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

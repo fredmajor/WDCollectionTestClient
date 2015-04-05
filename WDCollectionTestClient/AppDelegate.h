@@ -7,9 +7,21 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class WDDatasetArrayController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak, nonatomic) IBOutlet WDDatasetArrayController* datasetArrayController;
+@property (weak, nonatomic) IBOutlet NSTextField* removeIndTB;
 
+@property (weak, nonatomic) IBOutlet NSTextField* duplicateFromTB;
+@property (weak, nonatomic) IBOutlet NSTextField* duplicateToTB;
+
+@property (strong, nonatomic) NSMutableArray* datasets;
+@property (weak, nonatomic) IBOutlet NSTableView *datasetsTableView;
+
+- (IBAction)removeDataItemAtIndex:(id)sender;
+- (IBAction)duplicateCurrentAndInsertAtIndex:(id)sender;
+- (IBAction)printItems:(id)sender;
 @end
 
