@@ -15,6 +15,8 @@
 		5838899D1AD1674B00DE8805 /* WDDataset.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838899C1AD1674B00DE8805 /* WDDataset.m */; };
 		583889A01AD167E400DE8805 /* WDDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5838899F1AD167E400DE8805 /* WDDataItem.m */; };
 		583889A31AD16E5900DE8805 /* WDDatasetArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */; };
+		586BA3B41AD2A46E00C500BC /* WDTestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 586BA3B31AD2A46E00C500BC /* WDTestCollectionView.m */; };
+		586BA3B81AD2A75F00C500BC /* WDCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583889961AD1628800DE8805 /* WDCollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 			remoteGlobalIDString = 5838897F1AD15F4500DE8805;
 			remoteInfo = WDCollectionViewTests;
 		};
-		583889991AD1629D00DE8805 /* PBXContainerItemProxy */ = {
+		586BA3B91AD2A7DA00C500BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 583889901AD1628800DE8805 /* WDCollectionView.xcodeproj */;
 			proxyType = 1;
@@ -66,6 +68,8 @@
 		5838899F1AD167E400DE8805 /* WDDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDataItem.m; sourceTree = "<group>"; };
 		583889A11AD16E5900DE8805 /* WDDatasetArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDatasetArrayController.h; sourceTree = "<group>"; };
 		583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDatasetArrayController.m; sourceTree = "<group>"; };
+		586BA3B21AD2A46E00C500BC /* WDTestCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTestCollectionView.h; sourceTree = "<group>"; };
+		586BA3B31AD2A46E00C500BC /* WDTestCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTestCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586BA3B81AD2A75F00C500BC /* WDCollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +124,7 @@
 				5838899F1AD167E400DE8805 /* WDDataItem.m */,
 				583889A11AD16E5900DE8805 /* WDDatasetArrayController.h */,
 				583889A21AD16E5900DE8805 /* WDDatasetArrayController.m */,
+				586BA3B61AD2A47800C500BC /* WDCollectionViewClientFiles */,
 			);
 			path = WDCollectionTestClient;
 			sourceTree = "<group>";
@@ -158,6 +164,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		586BA3B61AD2A47800C500BC /* WDCollectionViewClientFiles */ = {
+			isa = PBXGroup;
+			children = (
+				586BA3B21AD2A46E00C500BC /* WDTestCollectionView.h */,
+				586BA3B31AD2A46E00C500BC /* WDTestCollectionView.m */,
+			);
+			name = WDCollectionViewClientFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,7 +187,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5838899A1AD1629D00DE8805 /* PBXTargetDependency */,
+				586BA3BA1AD2A7DA00C500BC /* PBXTargetDependency */,
 			);
 			name = WDCollectionTestClient;
 			productName = WDCollectionTestClient;
@@ -286,6 +301,7 @@
 				5838894E1AD15E3300DE8805 /* AppDelegate.m in Sources */,
 				583889A01AD167E400DE8805 /* WDDataItem.m in Sources */,
 				583889A31AD16E5900DE8805 /* WDDatasetArrayController.m in Sources */,
+				586BA3B41AD2A46E00C500BC /* WDTestCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +321,10 @@
 			target = 583889461AD15E3300DE8805 /* WDCollectionTestClient */;
 			targetProxy = 5838895B1AD15E3300DE8805 /* PBXContainerItemProxy */;
 		};
-		5838899A1AD1629D00DE8805 /* PBXTargetDependency */ = {
+		586BA3BA1AD2A7DA00C500BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WDCollectionView;
-			targetProxy = 583889991AD1629D00DE8805 /* PBXContainerItemProxy */;
+			targetProxy = 586BA3B91AD2A7DA00C500BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,6 +378,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
 			};
 			name = Debug;
 		};
@@ -397,6 +414,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
 			};
 			name = Release;
 		};
@@ -477,6 +495,7 @@
 				583889661AD15E3300DE8805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		583889671AD15E3300DE8805 /* Build configuration list for PBXNativeTarget "WDCollectionTestClientTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +504,7 @@
 				583889691AD15E3300DE8805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

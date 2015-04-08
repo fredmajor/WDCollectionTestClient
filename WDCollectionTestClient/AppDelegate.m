@@ -25,6 +25,7 @@
 @synthesize duplicateToTB;
 @synthesize datasetArrayController;
 @synthesize datasetsTableView;
+@synthesize dataItemTableView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -56,6 +57,7 @@
             [currentDataset.dataItems removeObjectAtIndex:remInd];
             currentDataset.itemsReported--;
             [datasetsTableView reloadData];
+            [dataItemTableView reloadData];
         }else{
             NSLog(@"given index out of range!!");
         }
@@ -83,6 +85,7 @@
             [currentDataset.dataItems insertObject:itemToDup atIndex:toInd];
             currentDataset.itemsReported++;
             [datasetsTableView reloadData];
+            [dataItemTableView reloadData];
             
         }else{
             NSLog(@"Wrong indices given!!");

@@ -19,6 +19,7 @@
 
 @property (strong, nonatomic) NSMutableArray* datasets;
 @property (weak, nonatomic) IBOutlet NSTableView *datasetsTableView;
+@property (weak, nonatomic) IBOutlet NSTableView *dataItemTableView;
 
 - (IBAction)removeDataItemAtIndex:(id)sender;
 - (IBAction)duplicateCurrentAndInsertAtIndex:(id)sender;

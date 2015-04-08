@@ -41,7 +41,6 @@
     
     [openDlg beginSheetModalForWindow:self.window completionHandler:^(NSInteger result) {
         if (result == NSFileHandlingPanelOKButton) {
-            NSLog(@"OK");
             NSURL*  dirUrl = [[openDlg URLs] objectAtIndex:0];
             
             newDataset.datasetKey = [[dirUrl absoluteString] lastPathComponent];
