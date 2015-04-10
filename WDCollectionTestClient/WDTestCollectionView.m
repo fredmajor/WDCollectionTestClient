@@ -8,6 +8,7 @@
 
 #import "WDTestCollectionView.h"
 #import "WDDataset.h"
+#import "WDDataItem.h"
 
 @implementation WDTestCollectionView
 
@@ -38,6 +39,11 @@
         [super changedDatasource:self.datasetContentSourceArrayController.arrangedObjects
                 withDatasourceId:datasetId];
     }
+}
+
++(NSURL*)getImageUrlFromRepresentedObject:(id)representedObject{
+    WDDataItem * obj = representedObject;
+    return [NSURL URLWithString:obj.imagePath];
 }
 
 @end
