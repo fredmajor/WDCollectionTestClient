@@ -14,6 +14,16 @@
 @synthesize editableBool;
 @synthesize editableString;
 @synthesize constanteString;
+@synthesize uniqueId=_uniqueId;
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _uniqueId = [[NSUUID UUID]UUIDString];
+    }
+    return self;
+}
 
 - (NSString *)debugDescription{
     return [NSString stringWithFormat:@"<%@: %p> %@", [self class], self, self.imagePath];

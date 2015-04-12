@@ -36,8 +36,8 @@
             datasetId = ((WDDataset *)self.datasetNameSourceArrayController.selectedObjects[0]).datasetKey;
         }
 
-        [super changedDatasource:self.datasetContentSourceArrayController.arrangedObjects
-                withDatasourceId:datasetId];
+       [super changedDatasource:self.datasetContentSourceArrayController.arrangedObjects withDatasourceId:datasetId];
+//        [super changedDatasource:self.datasetContentSourceArrayController.arrangedObjects withDatasourceId:nil];
     }
 }
 
@@ -46,4 +46,8 @@
     return [NSURL URLWithString:obj.imagePath];
 }
 
++(id)uniqueIdOfDataObject:(id)dataObject{
+    WDDataItem *obj = dataObject;
+    return obj.uniqueId;
+}
 @end

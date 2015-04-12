@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString* editableString;
 @property (nonatomic, strong) NSString* constanteString;
 @property (nonatomic, strong) NSNumber* editableBool;
+@property (nonatomic,strong, readonly) NSString* uniqueId;
 
 @end
